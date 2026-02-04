@@ -17,15 +17,15 @@ Analyze the differences between simulated and real clinical procedures
 
 **Materials and Setup**
 
-TX60 industrial robot
+-TX60 industrial robot
 
-Syringe used as biopsy tool
+-Syringe used as biopsy tool
 
-Silicone breast models placed on cork blocks
+-Silicone breast models placed on cork blocks
 
-Modeling clay for tool stabilization
+-Modeling clay for tool stabilization
 
-All reference frames, tools, and robot positions were manually defined based on the physical configuration of the setup.
+-All reference frames, tools, and robot positions were manually defined based on the physical configuration of the setup.
 
 **Procedure Overview**
 
