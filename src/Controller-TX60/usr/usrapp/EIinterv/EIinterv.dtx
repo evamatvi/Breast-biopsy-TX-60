@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataList xmlns="DataNameSpace">
+  <aioSection />
+  <boolSection>
+    <bool name="exit" public="false">
+      <valueBool value="false" index="0" />
+    </bool>
+    <bool name="bAgafat" public="false">
+      <valueBool value="false" index="0" />
+    </bool>
+  </boolSection>
+  <configRsSection />
+  <configSection />
+  <dioSection>
+    <dio size="1" name="Cil_actuador" public="false" />
+    <dio size="1" name="Cil_presencia" public="false" />
+  </dioSection>
+  <frameSection>
+    <frame name="world" public="false">
+      <fFather alias="" name="" fatherIndex="0" />
+      <valueFrame index="0">
+        <tfValue x="0" y="0" z="0" rx="0" ry="0" rz="0" />
+      </valueFrame>
+    </frame>
+    <frame name="fTreball" public="false">
+      <fFather alias="" name="world" fatherIndex="0" />
+      <valueFrame index="0">
+        <tfValue x="0" y="0" z="0" rx="0" ry="0" rz="0" />
+      </valueFrame>
+    </frame>
+  </frameSection>
+  <jointRsSection />
+  <jointSection>
+    <joint name="home" public="false">
+      <valueJoint index="0">
+        <jointValue j1="0" j2="0" j3="0" j4="0" j5="0" j6="0" />
+      </valueJoint>
+    </joint>
+  </jointSection>
+  <mdescSection>
+    <mdesc name="VelocitatLenta" public="false">
+      <valueMdesc index="0">
+        <mdescValue accel="100" vel="5" decel="100" tmax="99999" rmax="99999" blend="off" leave="50" reach="50" />
+      </valueMdesc>
+    </mdesc>
+    <mdesc name="VelocitatRapida" public="false">
+      <valueMdesc index="0">
+        <mdescValue accel="100" vel="15" decel="100" tmax="99999" rmax="99999" blend="off" leave="50" reach="50" />
+      </valueMdesc>
+    </mdesc>
+  </mdescSection>
+  <numSection>
+    <num name="nVar" public="false">
+      <valueNum value="271" index="0" />
+    </num>
+  </numSection>
+  <pointRsSection />
+  <pointSection>
+    <point name="pextraccio3" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="323.749115" y="-203.410642" z="-240.918413" rx="-19.856991" ry="142.082688" rz="34.961792" />
+        <cpValue shoulder="lefty" elbow="epositive" wrist="wpositive" />
+      </valuePoint>
+    </point>
+    <point name="peina" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="505.439875" y="138.234325" z="-242.330722" rx="51.278656" ry="113.879395" rz="-51.005778" />
+        <cpValue shoulder="lefty" elbow="epositive" wrist="wpositive" />
+      </valuePoint>
+    </point>
+    <point name="pextraccio1" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="391.523827" y="-125.226372" z="-257.773093" rx="-19.858901" ry="142.083164" rz="34.962736" />
+        <cpValue shoulder="lefty" elbow="epositive" wrist="wpositive" />
+      </valuePoint>
+    </point>
+    <point name="pfinal" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="450.715285" y="133.455089" z="-209.59007" rx="14.860085" ry="117.23841" rz="-16.342146" />
+        <cpValue shoulder="lefty" elbow="epositive" wrist="wpositive" />
+      </valuePoint>
+    </point>
+    <point name="pextraccio2" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="350.048142" y="-172.323225" z="-243.577321" rx="-19.857757" ry="142.082549" rz="34.962154" />
+        <cpValue shoulder="lefty" elbow="epositive" wrist="wpositive" />
+      </valuePoint>
+    </point>
+    <point name="psobrepit" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="341.50344" y="-103.41499" z="-197.379464" rx="-19.858089" ry="142.082453" rz="34.962346" />
+        <cpValue shoulder="lefty" elbow="epositive" wrist="wpositive" />
+      </valuePoint>
+    </point>
+  </pointSection>
+  <sioSection />
+  <stringSection />
+  <toolSection>
+    <tool name="flange" public="false">
+      <tFather alias="" name="" fatherIndex="0" />
+      <valueTool index="0">
+        <ttValue x="0" y="0" z="0" rx="0" ry="0" rz="0" />
+        <io alias="io" name="valve1" ioIndex="0" open="0" close="0" />
+      </valueTool>
+    </tool>
+    <tool name="tAgulla" public="false">
+      <tFather alias="" name="flange" fatherIndex="0" />
+      <valueTool index="0">
+        <ttValue x="-30" y="-30" z="193.5" rx="0" ry="0" rz="-134" />
+        <io alias="io" name="valve1" ioIndex="0" open="1" close="1" />
+      </valueTool>
+    </tool>
+    <tool name="tPunta" public="false">
+      <tFather alias="" name="flange" fatherIndex="0" />
+      <valueTool index="0">
+        <ttValue x="-30" y="-30" z="175" rx="0" ry="0" rz="-134" />
+        <io alias="io" name="valve1" ioIndex="0" open="1" close="1" />
+      </valueTool>
+    </tool>
+  </toolSection>
+  <trsfSection />
+</dataList>

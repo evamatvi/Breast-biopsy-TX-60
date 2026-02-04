@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CellUserOptions>
+  <Controller Name="Controller-TX60">
+    <Application>Disk://EIinterv/EIinterv.pjx</Application>
+  </Controller>
+  <Option Name="DataTreeView">
+    <Nodes>
+      <Node Path="COPIA1212" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx\bool" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx\frame" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx\jointRx" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx\mdesc" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx\num" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx\pointRx" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx\tool" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="CellExplorer">
+    <Nodes>
+      <Node Path="COPIA1212" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\Disk:##EIinterv#EIinterv.pjx\start" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="GeometryView">
+    <Nodes>
+      <Node Path="COPIA1212" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\EIinterv" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\EIinterv\world[0]" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\EIinterv\world[0]\fTreball" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\EIinterv\world[0]\pextraccio3" IsExpanded="true" />
+      <Node Path="COPIA1212\Controller-TX60\EIinterv\jointRx" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="Breakpoints">
+    <Breakpoints />
+  </Option>
+  <Option Name="IOsControlPanel">
+    <Ios />
+  </Option>
+  <Option Name="Watches">
+    <Watches />
+  </Option>
+  <Option Name="ExpressionWatches">
+    <ExpressionWatches>
+      <ExpressionWatch></ExpressionWatch>
+    </ExpressionWatches>
+  </Option>
+  <Option Name="3DView">
+    <_3DView Visible="true" />
+  </Option>
+  <Option Name="SynchronizerMode">
+    <Synchronizers>
+      <Synchronizer Controller="Controller-TX60" Mode="Emulator" />
+    </Synchronizers>
+  </Option>
+  <Option Name="Safety">
+    <Safeties />
+  </Option>
+</CellUserOptions>

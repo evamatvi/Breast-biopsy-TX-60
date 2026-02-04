@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<programList xmlns="ProgramNameSpace">
+  <program name="start" public="false">
+    <description />
+    <paramSection />
+    <localSection />
+    <source>
+      <code>begin
+  userPage()
+  enablePower()
+  VelocitatLenta.vel=5
+  VelocitatRapida.vel=15
+  exit=false
+  // Move robot to initial home position
+  movej(home,tAgulla[0],VelocitatRapida)
+  delay(1)
+  cls()
+  
+  while(exit==false)
+    gotoxy(0,1)
+    putln("Choose an option:")
+    gotoxy(2,13)
+    put("Start")
+    gotoxy(35,13)
+    put("End")
+    do
+      nVar=getKey()
+    until(nVar==271 or nVar==278)
+    if nVar==278
+      exit=true
+    endIf
+    
+    if nVar==271
+      cls()
+      putln("Starting full sequence...")
+      putln(" ")
+      // Point 1: Initial position above te tool
+      movej(appro(peina,{0,0,-100,0,0,0}),tPunta[0],VelocitatRapida)
+      waitEndMove()
+      open(tPunta)
+      delay(1)
+      putln("Robot is in front of the syringe")
+      // Point 2: Position to pick up the syringe
+      movej(appro(peina,{0,0,-60,0,0,0}),tPunta[0],VelocitatRapida)
+      waitEndMove()
+      delay(1)
+      
+      bAgafat = false
+      while(bAgafat == false)
+        cls()
+        gotoxy(0,1)
+        putln("Confirmation: Has the syringe been picked up?")
+        gotoxy(2,13)
+        put("Yes")
+        gotoxy(30,13)
+        put("Retry")
+        putln(" ") 
+        do
+          nVar=getKey()
+        until(nVar==271 or nVar==278)
+        // F1 for OK, F8 for Retry
+        
+        if nVar==271
+          cls()
+          bAgafat = true
+          putln("Continuing process...")
+          waitEndMove()
+          close(tPunta)
+          waitEndMove()
+          
+        else
+          // If not picked up, open gripper and try again
+          cls()
+          open(tPunta)
+          delay(1)
+          movej(appro(peina,{0,0,-100,0,0,0}),tPunta[0],VelocitatRapida)
+          waitEndMove()
+          movel(appro(peina,{0,0,-60,0,0,0}),tPunta[0],VelocitatLenta)
+        endIf
+      endWhile
+      
+      putln("Syringe secured")
+      putln(" ")
+      movej(appro(peina,{0,0,-100,0,0,0}),tPunta[0],VelocitatRapida)
+      // Point 3: Move over to the chest area
+      movej(psobrepit,tAgulla[0],VelocitatRapida)
+      putln("Moving over the work area...")
+      waitEndMove()
+      // Point 4: Extraction point 1
+      movel(pextraccio1,tAgulla[0],VelocitatLenta)
+      putln("Performing extraction 1...")
+      waitEndMove()
+      delay(3)
+      putln("Extraction 1 completed")
+      putln(" ")
+      movej(psobrepit,tAgulla[0],VelocitatRapida)
+      // Point 5: Extraction Point 2
+      movel(pextraccio2,tAgulla[0],VelocitatLenta)
+      putln("Performing extraction 2...")
+      waitEndMove()
+      delay(3)
+      putln("Extraction 2 completed")
+      putln(" ")
+      movej(psobrepit,tAgulla[0],VelocitatRapida)
+      // Point 6: Extraction point 3
+      movel(pextraccio3,tAgulla[0],VelocitatLenta)
+      putln("Performing extraction 3...")
+      waitEndMove()
+      delay(3)
+      putln("Extraction 3 completed")
+      putln(" ")
+      movej(psobrepit,tAgulla[0],VelocitatRapida)
+      
+      //Return and release
+      movej(pfinal,tAgulla[0],VelocitatRapida)
+      putln("Returning syringe....")
+      waitEndMove()
+      open(tPunta)
+      delay(1)
+      waitEndMove()
+      putln("Syringe released")
+      putln(" ")
+
+      // Return to home
+      movej(home,tAgulla[0],VelocitatRapida)
+      waitEndMove()
+      cls()
+      putln("Process completed successfully")
+      delay(2)
+    endIf
+  endWhile
+end
+
+      </code>
+    </source>
+  </program>
+</programList>

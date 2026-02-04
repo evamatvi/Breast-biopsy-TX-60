@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dataList xmlns="DataNameSpace">
+  <aioSection />
+  <boolSection />
+  <configRsSection />
+  <configSection />
+  <dioSection>
+    <dio size="1" name="Cil_actuador" public="false" />
+    <dio size="1" name="Cil_presencia" public="false" />
+  </dioSection>
+  <frameSection>
+    <frame name="world" public="false">
+      <fFather alias="" name="" fatherIndex="0" />
+      <valueFrame index="0">
+        <tfValue x="0" y="0" z="0" rx="0" ry="0" rz="0" />
+      </valueFrame>
+    </frame>
+  </frameSection>
+  <jointRsSection />
+  <jointSection />
+  <mdescSection>
+    <mdesc name="velAlta" public="true">
+      <valueMdesc index="0">
+        <mdescValue accel="100" vel="75" decel="100" tmax="99999" rmax="99999" blend="joint" leave="50" reach="50" />
+      </valueMdesc>
+    </mdesc>
+    <mdesc name="velBaix" public="false">
+      <valueMdesc index="0">
+        <mdescValue accel="100" vel="10" decel="100" tmax="99999" rmax="99999" blend="off" leave="50" reach="50" />
+      </valueMdesc>
+    </mdesc>
+  </mdescSection>
+  <numSection>
+    <num name="eixX" public="false">
+      <valueNum value="30" index="0" />
+    </num>
+    <num name="eixY" public="false">
+      <valueNum value="25" index="0" />
+    </num>
+    <num name="i" public="false">
+      <valueNum value="0" index="0" />
+    </num>
+    <num name="j" public="false">
+      <valueNum value="0" index="0" />
+    </num>
+  </numSection>
+  <pointRsSection />
+  <pointSection>
+    <point name="p0" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="366.58" y="-390.36" z="-359.79" rx="-179.84" ry="4.22" rz="29.87" />
+        <cpValue shoulder="ssame" elbow="esame" wrist="wsame" />
+      </valuePoint>
+    </point>
+    <point name="p1" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="564.22" y="94.65" z="-358.67" rx="-176.32" ry="2.07" rz="-28.5" />
+        <cpValue shoulder="ssame" elbow="esame" wrist="wsame" />
+      </valuePoint>
+    </point>
+    <point name="p2" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="377.23" y="135.67" z="-378.79" rx="-180" ry="0" rz="0" />
+        <cpValue shoulder="ssame" elbow="esame" wrist="wsame" />
+      </valuePoint>
+    </point>
+    <point name="p3" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="568.40361" y="92.80391" z="-333.62302" rx="-176.48891" ry="-1.58266" rz="-10.02892" />
+        <cpValue shoulder="ssame" elbow="esame" wrist="wsame" />
+      </valuePoint>
+    </point>
+    <point name="p4" public="false">
+      <pFather alias="" name="world" fatherIndex="0" />
+      <valuePoint index="0">
+        <tpValue x="704.56" y="184.21" z="-193.49" rx="-176.32" ry="2.07" rz="-28.5" />
+        <cpValue shoulder="ssame" elbow="esame" wrist="wsame" />
+      </valuePoint>
+    </point>
+  </pointSection>
+  <sioSection />
+  <stringSection />
+  <toolSection>
+    <tool name="flange" public="false">
+      <tFather alias="" name="" fatherIndex="0" />
+      <valueTool index="0">
+        <ttValue x="0" y="0" z="0" rx="0" ry="0" rz="0" />
+        <io alias="io" name="valve1" ioIndex="0" open="0" close="0" />
+      </valueTool>
+    </tool>
+    <tool name="einaLateral" public="false">
+      <tFather alias="" name="flange" fatherIndex="0" />
+      <valueTool index="0">
+        <ttValue x="30" y="30" z="170" rx="-90" ry="44" rz="-90" />
+        <io alias="io" name="valve1" ioIndex="0" open="1" close="1" />
+      </valueTool>
+    </tool>
+    <tool name="einaPunta" public="false">
+      <tFather alias="" name="flange" fatherIndex="0" />
+      <valueTool index="0">
+        <ttValue x="-30" y="-30" z="175" rx="0" ry="0" rz="-134" />
+        <io alias="io" name="valve1" ioIndex="0" open="1" close="1" />
+      </valueTool>
+    </tool>
+  </toolSection>
+  <trsfSection />
+</dataList>
