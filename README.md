@@ -11,7 +11,6 @@ The project places special emphasis on:
 - Manual supervision and human–robot interaction
 - Analysis of simulated versus real clinical procedures
 
----
 
 ## Main Objectives
 - Simulate a core needle breast biopsy procedure using an industrial robot
@@ -19,7 +18,6 @@ The project places special emphasis on:
 - Implement speed control and safety constraints during critical motions
 - Analyze differences between simulated and real biopsy procedures
 
----
 
 ## Materials and Setup
 The simulation setup includes the following elements:
@@ -38,7 +36,6 @@ The simulation setup includes the following elements:
 
 All reference frames, tools, and robot positions were manually defined based on the physical configuration of the experimental setup.
 
----
 
 ## Procedure Overview
 The system initializes at a predefined home position and displays a user-controlled menu to start or stop the procedure.
@@ -51,7 +48,6 @@ Once initiated:
 
 After completing the biopsy sequence, the robot releases the tool and safely returns to the home position.
 
----
 
 ## Safety Considerations
 Several safety measures were implemented to ensure reliable and controlled operation:
@@ -63,7 +59,6 @@ Several safety measures were implemented to ensure reliable and controlled opera
 
 These measures help ensure safe interaction between the robot, the environment, and the simulated medical setup.
 
----
 
 ## Design and Architecture
 The simulation follows a structured robotic workflow, with clearly defined phases for initialization, tool handling, biopsy execution, and shutdown.
@@ -76,8 +71,3 @@ Key design principles include:
 
 This design allows the simulation to be easily extended or adapted for future studies involving robotic-assisted medical interventions.
 
----
-
-## Authors
-**Eva Matabosch**  
-**Iman Tarfass**
